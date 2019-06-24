@@ -130,65 +130,14 @@ h1 span {
   width: 600px;
 }
 
-
-
-/* .ribbon {
-  display: block;
-  width: 50%;
-  position: relative;
-  background: #ba89b6;
-  color: #fff;
-  text-align: center;
-  padding: 1em 2em;
-  margin: 1em auto 2em;
- }
- .ribbon:before, .ribbon:after {
-  content: "";
-  position: absolute;
-  display: block;
-  bottom: -1em;
-  border: 1.5em solid #986794;
-  z-index: -1;
- }
- .ribbon:before {
-  left: -2em;
-  border-right-width: 1.5em;
-  border-left-color: transparent;
- }
- .ribbon:after {
-  right: -2em;
-  border-left-width: 1.5em;
-  border-right-color: transparent;
- }
- .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
-  content: "";
-  position: absolute;
-  display: block;
-  border-style: solid;
-  border-color: #804f7c transparent transparent transparent;
-  bottom: -1em;
- }
- .ribbon .ribbon-content:before {
-  left: 0;
-  border-width: 1em 0 0 1em;
- }
- .ribbon .ribbon-content:after {
-  right: 0;
-  border-width: 1em 1em 0 0;
- }
- 
-.ribbon-content span {
-  font-size: smaller;
-} */
-
- .well {
+.well {
    display: grid;
    grid-template-columns: auto 1fr;
    grid-gap: 30px;
    background: var(--cc-blue-light);
    border-color: #064851;
    box-shadow: 0px 2px 6px rgba(0,0,0,.3);
- }
+}
 
  .well h2 {
   color: var(--cc-orange);
@@ -227,7 +176,7 @@ h1 span {
 .disaster-recovery:before {
    background-image: url(img/cloud-border.svg);
    top: -1px;
-   height: 80px;
+   height: 180px;
 }
 
 .disaster-recovery:after {
