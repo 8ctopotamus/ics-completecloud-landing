@@ -1,0 +1,282 @@
+:root {
+  --cc-orange: #f15c24;
+  --cc-blue: #2ab4c7;
+  --cc-blue-light: #acdfe8;
+}
+
+@keyframes float {
+  from { transform: translateX(-50%) translateZ(0); }
+  to { transform: translateX(100%) translateZ(0); }
+}
+
+@keyframes hurricane {
+  from {
+    transform: rotate(0deg);
+    opacity: .75;
+  }
+  to {
+    transform: rotate(359deg);
+    opacity: 1;
+  }
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+.jumbotron h1 {
+  font-weight: bold;
+  margin-bottom: 30px;
+  /* font-size: 3rem; */
+}
+
+.logos {
+  max-width: 800px;
+}
+
+h1 span {
+  font-size: smaller;
+}
+
+.utility-section {
+  position: relative;
+  background: var(--cc-orange);
+  color: white;
+  padding: 40px 0;
+  z-index: 10;
+  margin-bottom: 60px;
+}
+
+.cc-orange h2 {
+  margin-top: 0;
+}
+
+.cloud-background {
+  position: relative;
+  background: var(--cc-blue-light);
+  background: linear-gradient(0deg, var(--cc-blue) 0%, var(--cc-blue-light) 100%);
+  padding: 80px 0;
+  margin-bottom: 0;
+}
+
+.cloud-background .container {
+  z-index: 10;
+  position: relative;
+}
+
+.cloud {
+  display: block;
+  width: 100px;
+  height: auto;
+  position: absolute;
+  z-index: 0;
+}
+
+[id^="cloud2"] {
+  -webkit-animation: float 200s linear infinite;
+  -moz-animation: float 200s linear infinite;
+  -o-animation: float 200s linear infinite;
+  animation: float 200s linear infinite;
+  top: -20px;
+  left: 50%;
+  width: 300px;
+}
+[id^="cloud3"] {
+  -webkit-animation: float 90s linear infinite;
+  -moz-animation: float 90s linear infinite;
+  -o-animation: float 90s linear infinite;
+  animation: float 90s linear infinite;
+  top: 45%;
+  right: 80%;
+}
+[id^="cloud1"] {
+  -webkit-animation: float 120s linear infinite;
+  -moz-animation: float 120s linear infinite;
+  -o-animation: float 120s linear infinite;
+  animation: float 120s linear infinite;
+  top: 70%;
+  right: 90%;
+  width: 150px;
+}
+
+[id^="cloud4"] {
+  -webkit-animation: float 700s linear infinite;
+  -moz-animation: float 700s linear infinite;
+  -o-animation: float 700s linear infinite;
+  animation: float 700s linear infinite;
+  top: -70px;
+  left: 77%;
+  width: 200px;
+}
+[id^="cloud5"] {
+  -webkit-animation: float 1000s linear infinite;
+  -moz-animation: float 1000s linear infinite;
+  -o-animation: float 1000s linear infinite;
+  animation: float 1000s linear infinite;
+  bottom: 45%;
+  left: 80%;
+}
+[id^="cloud6"] {
+  -webkit-animation: float 120s linear infinite;
+  -moz-animation: float 120s linear infinite;
+  -o-animation: float 120s linear infinite;
+  animation: float 120s linear infinite;
+  bottom: -10%;
+  right: 50%;
+  width: 600px;
+}
+
+
+
+/* .ribbon {
+  display: block;
+  width: 50%;
+  position: relative;
+  background: #ba89b6;
+  color: #fff;
+  text-align: center;
+  padding: 1em 2em;
+  margin: 1em auto 2em;
+ }
+ .ribbon:before, .ribbon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1em;
+  border: 1.5em solid #986794;
+  z-index: -1;
+ }
+ .ribbon:before {
+  left: -2em;
+  border-right-width: 1.5em;
+  border-left-color: transparent;
+ }
+ .ribbon:after {
+  right: -2em;
+  border-left-width: 1.5em;
+  border-right-color: transparent;
+ }
+ .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #804f7c transparent transparent transparent;
+  bottom: -1em;
+ }
+ .ribbon .ribbon-content:before {
+  left: 0;
+  border-width: 1em 0 0 1em;
+ }
+ .ribbon .ribbon-content:after {
+  right: 0;
+  border-width: 1em 1em 0 0;
+ }
+ 
+.ribbon-content span {
+  font-size: smaller;
+} */
+
+ .well {
+   display: grid;
+   grid-template-columns: auto 1fr;
+   grid-gap: 30px;
+   background: var(--cc-blue-light);
+   border-color: #064851;
+   box-shadow: 0px 2px 6px rgba(0,0,0,.3);
+ }
+
+ .well h2 {
+  color: var(--cc-orange);
+  margin-top: 0;
+ }
+
+ .features {
+   margin-bottom: 60px;
+ }
+
+ .features .fa {
+  color: #064851;
+ }
+
+ .disaster-recovery {
+  color: white;
+  background: #064851;
+  background-size: cover;
+  position: relative;
+  padding: 180px 0;
+  margin-bottom: 0;
+ }
+
+ .disaster-recovery:before,
+ .disaster-recovery:after {
+   content: '';
+   background-repeat: no-repeat;
+   display: block;
+   position: absolute;
+   left: 0;
+   width: 100%;
+   background-size: cover;
+} 
+
+
+.disaster-recovery:before {
+   background-image: url(img/cloud-border.svg);
+   top: -1px;
+   height: 80px;
+}
+
+.disaster-recovery:after {
+  background-image: url(img/water.svg);
+  bottom: -1px;
+  height: 72px;
+}
+
+.disaster-recovery h2 {
+  font-size: 50px;
+}
+
+.hurricane {
+  -webkit-animation: hurricane 22s ease-in-out infinite;
+  -moz-animation: hurricane 22s ease-in-out infinite;
+  -o-animation: hurricane 22s ease-in-out infinite;
+  animation: hurricane 22s ease-in-out infinite;
+  max-height: 375px;
+}
+
+ /* .disaster-recovery:before {
+  content: '\f0e7';
+  font-family: Fontawesome;
+  position: absolute;
+  top: -100px;
+  right: 0%;
+  font-size: 100rem;
+  color: white;
+ } */
+
+ .col-stats .well {
+  display: block;
+ }
+
+ footer {
+  background: var(--cc-blue);
+  background: linear-gradient(0deg, var(--cc-blue) 0%, var(--cc-blue) 100%);
+  padding: 80px 0 120px;
+ }
+
+ footer h2 {
+   font-size: 50px;
+   margin-bottom: 20px;
+ }
+
+.weird .well {
+  display: block;
+}
+
+.btn-orange {
+  background: var(--cc-orange);
+}
